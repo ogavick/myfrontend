@@ -16,7 +16,7 @@ function Home() {
         setMovies(popularMovies);
       } catch (err) {
         console.log(err);
-        setError("Failed to load movies...");
+        setError("Failed to load movies. Please check the TMDB API key and try again.");
       } finally {
         setLoading(false);
       }
@@ -37,7 +37,7 @@ function Home() {
 
     }catch (err){
         console.log(err)
-        setError("Failed to search movies...")
+        setError("Failed to search movies. Please check the TMDB API key and try again.")
     } finally {
         setLoading(false)
     }
